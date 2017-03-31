@@ -1,0 +1,44 @@
+<div>
+
+
+  <div class="main-container">
+    <div class="content-container">
+      <div class="content-area">
+
+        <!--global error display-->
+        <div class="alert alert-danger" *ngIf="globalErrorMsg">
+          <div class="alert-item">
+            <span class="alert-text">
+              {{globalErrorMsg}}
+            </span>
+          </div>
+          <div class="alert-action">
+            <button type="button" class="close" aria-label="Close" (click)="globalErrorMsg=null">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        </div>
+
+
+        <router-outlet></router-outlet>
+      </div>
+
+      <nav class="sidenav">
+        <section class="sidenav-content">
+
+          <section class="nav-group collapsible nav-section">
+            <input id="dashboard" type="checkbox">
+            <label for="dashboard" [routerLinkActive]="['active']" class="nav-link" routerLink='dashboard'><clr-icon shape="icon-system-overview" size="16"></clr-icon> <span class="nav-labels">Dashboard</span></label>
+            <ul class="nav-list">
+              <li [routerLinkActive]="['active']" class="nav-link" routerLink='dashboard/dashboardsystem'>
+                <span class="nav-labels nav-submenu">System</span>
+              </li>
+            </ul>
+          </section>
+
+
+        </section>
+      </nav>
+    </div>
+  </div>
+</div>

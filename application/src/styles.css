@@ -1,0 +1,63 @@
+/*copied from bootstrap!  should have been there in clarity*/
+.pull-left {
+  float: left !important;
+}
+.pull-right {
+  float: right !important;
+}
+
+.main-container .sidenav{
+  width: 12%;
+}
+
+.nav-labels
+{
+  font-size : 13px ! important;
+  font-weight: 600 ! important;
+  margin-left: 7px;
+}
+
+.nav-icon{
+  margin-right: 5px;
+}
+
+.nav-submenu{
+  margin-left: 13px;
+}
+
+.nav-section{
+  margin-top: 10px ! important;
+}
+
+
+.button-group{
+  margin-bottom: -30px;
+  margin-left: -15px;
+  margin-top: 20px;
+}
+
+.sidenav svg{
+  color: #565656;
+}
+
+header svg{
+  color:#dddddd;
+  opacity: 1;
+}
+
+svg{
+  color: #747474;
+}
+
+.button-group svg{
+  color:#747474;
+  opacity: 1;
+}
+
+.card svg{
+  color: #0094d2;
+}
+
+
+
+
